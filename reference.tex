@@ -1,0 +1,627 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{kotex}
+\setlength{\columnsep}{0mm}
+	
+\definecolor{darkred}{rgb}{0.8,0.2,0.2}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+\usepackage{color}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{Geonhyup Lee}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Ph.D. Student} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{+82 10 2058 9803}\\
+    \icon{MapMarker}{11}{South Korea}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:sangjun7@gm.gist.ac.kr}{lghjayly@gm.gist.ac.kr}}\\	
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+	I am a Robotics AI researcher developing scalable frameworks for multimodal action learning, with the goal of enabling human-level manipulation. My research focuses on collecting large-scale multimodal datasets—including vision, force, and tactile inputs—from both simulation and real-world environments, and training action models that generalize to contact-rich manipulation tasks. Ultimately, I aim to deploy these models on dual-arm robotic platforms to achieve human-like bimanual manipulation. \\
+
+
+ 
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+        Korean (Native), English (TOEIC 880)
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Programming:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python (Pytorch, Tensorflow), MATLAB, C/C++
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Simulator:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Isaac Gym, Isaac Lab (Isaac Sim), Genesis, Mujoco, Coppeliasim, Adams
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+      \textbf{Robotics \& CAD/CAE:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      ROS, LabVIEW, Simulink, Autodesk Inventor, SolidWorks, ANSYS
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{9/2021 - Present}
+		{Gwangju Institute of Science and Technology (GIST)}
+		{Advisor: Prof. Kyoobin Lee}
+		{Ph.D. Course in Department of AI Convergence \\
+            \textcolor{darkred}{\textbf{Thesis}}: 
+            }
+	\entry
+		{3/2019 - 2/2021}
+		{Gwangju Institute of Science and Technology (GIST)}
+		{Advisor: Prof. Jeongwon Yoon}
+		{M.S. Course in School of Integrated Technology (Robotics Intelligence Program) \\
+            \textcolor{darkred}{\textbf{Thesis}}: Suspended Cable-Driven Parallel Robot with Series Elastic Actuator to Enhance the Wrench Feasibility}
+	\entry
+		{3/2013 - 2/2019}
+		{Pukyong National University}
+		{Advisor: Prof. Chang-Yong Lee}
+		{B.S. in Mechanical Engineering}       
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+
+    % 알키미스트 과제 넣기
+    \entry
+		{Project Leader}
+		{Development of humanoid robots that feel like humans, communicate, and grow through learning}
+          {(Jan.\ 2025 -- Present) (Joint research with SNU, KAIST, and PNU)}
+		{%Dummy text 
+            \textcolor{darkred}{TL;DR: Development of Robotic Intelligence Systems for Conducting Assembly Tasks in Unstructured Environments}
+            \begin{itemize}
+              \item Developed a suite of robotic assembly skills, trained entirely in simulation and successfully transferred to real-world hardware.
+               \item Built an automated pipeline that turns web videos of human manipulation into labeled trajectories and pre-trains a physical-reasoning Robot Foundation Model (RFM).
+            \end{itemize}
+            }
+
+
+    % 시뮬레이션 과제 넣기
+    \entry
+		{Project Leader}
+		{Core Technology Development of Open Simulator for SDx Intelligent Application Development}
+		{\\(Apr. 2024 -- Present) (Joint research with ETRI)}
+		{%Dummy text 
+        \textcolor{darkred}{TL;DR: Development of Robotic Intelligence Systems for Conducting Assembly Tasks in Unstructured Environments}
+            \begin{itemize}
+                \item Development of VLA (Vision-Language-Action) and robotic policy model using large-scale manipulation dataset
+            \end{itemize}
+            }
+
+    % 촉각과제 넣기
+    \entry
+		{Project Member}
+		{Development of Core Technologies for a Skin-Integrated Robotic Hand with Human-Level Tactile Sensation and Manipulation Capabilities}
+		{\\(Apr. 2024 -- Present) (Joint research with KIST, and KIMM)}
+		{%Dummy text 
+        \textcolor{darkred}{TL;DR: Development of tactile data-driven robotic manipulation and tactile intelligence technologies}
+            \begin{itemize}
+                \item Development of large-scale tactile dataset generation methods for robotic manipulation
+                \item Development of robotic policy models based on visual and tactile data
+            \end{itemize}
+            }
+
+    
+    \entry
+		{Project Member}
+		{Shared autonomy based on deep reinforcement learning for responding intelligently to unstructured environments such as robotic assembly tasks}
+		{\\(Apr. 2020 -- Dec. 2023) (Joint research with Korea Univ)}
+		{%Dummy text 
+        \textcolor{darkred}{TL;DR: Development of Robotic Intelligence Systems for Conducting Assembly Tasks in Unstructured Environments}
+            \begin{itemize}
+                \item Full system integration. \href{https://youtu.be/S3XjGVW2-iw}{\textcolor{blue}{\faVideoCamera\;Video}}
+            \end{itemize}
+            }
+            
+    \entry
+		{Project Member}
+		{Devlopment of Image-Text Similarity Inference and Task Planning Method for Natural Language Command Services of a Smart Home AI Agent}
+		{\\(Mar. 2024 -- Dec. 2024) (Joint research with LG Electronics)}
+		{%Dummy text 
+            \textcolor{darkred}{TL;DR: Leveraged vision–language models (VLM) to ground free-form user commands in household imagery and auto-synthesize hierarchical execution plans.}
+            }
+
+    \entry
+      {Project Leader}
+      {Sim-to-Real Transfer Techniques for Enhanced Robotic Assembly Performance}
+      {\\(Feb. 2022 -- Dec. 2023) (Joint research with ETRI)}
+      {
+        \textcolor{darkred}{TL;DR: Developed sim-to-real transfer methods that significantly improve the reliability and speed of real-world robotic assembly tasks.}
+        \begin{itemize}
+            \item \href{https://www.hellodd.com/news/articleView.html?idxno=102536}%
+            {\textcolor{blue}{\faFileTextO\;News coverage}}
+        \end{itemize}
+      }
+
+    \entry
+		{Project Member}
+		{Development of Cloud Robot Intelligence Sharing Framework to Enhance the Intelligence of Multiple Robots}
+		{\\(Apr. 2020 -- Dec. 2022) (Joint research with LG Electronics, and ETRI)}
+		{%Dummy text 
+        \textcolor{darkred}{TL;DR: Enhancing Robot Perception via Cloud-based Knowledge Sharing for Novel Object Discovery and
+Incremental Learning}
+            \begin{itemize}
+                \item Development of Incremental Learning Method for 3D Point Cloud
+            \end{itemize}
+            }
+
+            
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt} 
+\cvsect{Publications}
+{\textbf{Google Scholar:} %
+     \href{https://scholar.google.co.kr/citations?user=m7CNdK0AAAAJ\&hl=ko}%
+     {\textcolor{blue}{scholar.google.co.kr/citations?user=m7CNdK0AAAAJ}}
+\vspace{10 pt} 
+
+\begin{entrylist}
+
+    \entry
+        {Int. Top Conf.}
+        {ManipForce: Force-Guided Policy Learning with Frequency-Aware Representation for Contact-Rich Manipulation} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2026 IEEE International Conference on Robotics \& Automation (ICRA)} \\
+        \textbf{Geonhyup Lee}, Youngjin Lee, Kangmin Kim, Sungju Lee, Sangjun Noh, Seunghyeok Back, and Kyoobin Lee \\
+        \textcolor{blue}{\href{https://arxiv.org/abs/2509.19047?}{[Paper]}} 
+        \href{https://youtu.be/AL4f7MfkI0g}{\textcolor{blue}{[Video]}}
+        \href{https://sites.google.com/view/manipforce/}{\textcolor{blue}{[WebSite]}}
+        }
+
+    \entry
+        {Int. Top Conf.}
+        {BiGraspFormer: End-to-End Bimanual Grasp Transformer} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2026 IEEE International Conference on Robotics \& Automation (ICRA)} \\
+        Kangmin Kim, Seunghyeok Back, \textbf{Geonhyup Lee}, Sangbeom Lee, Sangjun Noh, and Kyoobin Lee \\
+       \textcolor{blue}{\href{https://arxiv.org/pdf/2509.19142}{[Paper]}} 
+       \href{https://sites.google.com/view/bigraspformer}{\textcolor{blue}{[WebSite]}}
+        }	
+
+    \entry
+        {Int. Top Journal\\Under Review}
+        {3D Flow Diffusion Policy: Visuomotor Policy Learning via Generating Flow in 3D Space} 
+        {}
+        {\vspace{0pt}
+        Sangjun Noh, Dongwoo Nam, Kangmin Kim, \textbf{Geonhyup Lee}, Yeonguk Yu, Raeyoung Kang, and Kyoobin Lee\\
+       \textcolor{blue}{\href{https://arxiv.org/abs/2509.18676}{[Paper]}} 
+       \href{https://sites.google.com/view/3dfdp/home}{\textcolor{blue}{[WebSite]}}
+        }	
+    
+    \entry
+        {Int. Top Journal\\Under Review}
+        {AssemFormer: Generalizable Vision-Force Guided Multi-Pin Assembly via Zero-Shot Sim-to-Real Approach} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{Submitted to IEEE Transactions on Cybernetics (Under Review)} \\
+        \textbf{Geonhyup Lee}, Sungho Shin, Joosoon Lee, Kangmin Kim, Sangbeom Lee, Youngjin Lee, and Kyoobin Lee \\
+         \href{https://youtu.be/ONNxIl9NiPQ}{\textcolor{blue}{[Video]}}
+        }
+
+    \entry
+        {Int. Top Journal\\Under Review}
+        {Enhancing Multi-Resolution Face Recognition via Cross-Resolution Feature Similarity Knowledge Distillation} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{Submitted to Pattern Recognition (Under Review)} \\
+        Sungho Shin, Yeonguk Yu, Sangjun Noh, Junseok Lee, \textbf{Geonhyup Lee} and Kyoobin Lee \\
+        }
+
+    \entry
+        {Int. Top Journal}
+        {GraspClutter6D: A Large-scale Dataset for Robotic Grasping and Perception in Clutter} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{IEEE Robotics and Automation Letters (2025)} \\
+        Seunghyeok Back, Joosoon Lee, Kangmin Kim, Heeseon Rho, \textbf{Geonhyup Lee}, Raeyong Kang, Sangbeom Lee, Sangjun Noh, and Kyoobin Lee \\
+       \textcolor{blue}{\href{https://arxiv.org/pdf/2504.06866?}{[Paper]}} 
+       \href{https://sites.google.com/view/graspclutter6d}{\textcolor{blue}{[WebSite]}}
+        }
+
+    \entry
+        {Int. Top Conf.}
+        {PolyFit: A Peg-in-hole Assembly Framework for Unseen Polygon Shpaes via Sim-to-real Adaptation} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)} \\
+        \textbf{Geonhyup Lee*}, Joosoon Lee*, Sangjun Noh, Minhwan Ko, Kangmin Kim, and Kyoobin Lee \\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/abstract/document/10802554}{[Paper]}} 
+         \href{https://youtu.be/1HlAXLuObnI}{\textcolor{blue}{[Video]}}
+         \href{https://sites.google.com/view/polyfit-peginhole}{\textcolor{blue}{[WebSite]}}
+        }
+        
+    \entry
+        {Int. Conf.}
+        {Seq2Act: A Sequence-to-Action Framework for Novel Shapes in Robotic Peg-in-Hole Assembly} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2024 21st International Conference on Ubiquitous Robots (UR)} \\
+        \textbf{Geonhyup Lee}, Joosoon Lee, Kyoobin Lee \\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10597529}{[Paper]}}
+        }
+
+    \entry
+        {Int. Conf.}
+        {PDCC: Peg-in-Hole Framework via Dynamic Continuous Contact Data} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2024 21st International Conference on Ubiquitous Robots (UR)} \\
+        Joosoon Lee, \textbf{Geonhyup Lee}, Kyoobin Lee \\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10597516}{[Paper]}}
+        }
+
+   \entry
+        {Dom.\ Journal}
+        {Data-driven Object-centric Framework for Peg-in-hole Learning} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{Journal of Institute of Control, Robotics and Systems (2023)} \\
+        \textbf{Geonhyup Lee}, Joosoon Lee, Sangjun Noh, Seongho Park, and Kyoobin Lee  \\
+        \textcolor{blue}{\href{https://scholar.kyobobook.co.kr/article/detail/4040049720749}{[Paper]}}
+        }
+
+    \entry
+        {Int. Top Journal}
+        {Comparative study on overground gait of stroke survivors with a conventional cane and a haptic cane} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{IEEE Transactions on Neural Systems and Rehabilitation Engineering (2021)} \\
+        Hosu Lee, Amre Eizad, \textbf{Geonhyup Lee}, Muhammad Raheel Afzal, Jiyong Yoon, Min-Kyun Oh, and Jungwon Yoon \\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/abstract/document/9580779}{[Paper]}}
+        }
+
+    \entry
+        {Int. Conf.}
+        {Design of suspended cable-driven parallel robot with series elastic actuator for 3-DOF body weight support system} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2021 18th International Conference on Ubiquitous Robots (UR)} \\
+        \textbf{Geonhyup Lee}, Hosu Lee, Amre Eizad, Sanghun Pyo, and Jungwon Yoon \\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/abstract/document/9494688}{[Paper]}}
+        }
+
+    \entry
+        {Int. Conf.}
+        {Development of haptic bracelets based arm swing feedback system for stroke survivors} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2020 20th International conference on control, automation and systems (ICCAS)} \\
+        Hosu Lee, Amre Eizad, \textbf{Geonhyup Lee}, Yeongmi Kim, and Jungwon Yoon\\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/abstract/document/9268318}{[Paper]}}
+        }
+
+    \entry
+        {Int. Conf.}
+        {Simulation Based Performance Comparison of Cascade PID and RISE Controllers for the 6-DOF Heavy Payload Industrial Robot} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{2020 17th International Conference on Ubiquitous Robots (UR)} \\
+        \textbf{Geonhyup Lee}, Amre Eizad, Hosu Lee, Sanghun Pyo, and Jungwon Yoon \\
+        \textcolor{blue}{\href{https://ieeexplore.ieee.org/abstract/document/9144847}{[Paper]}}
+        }
+
+   \entry
+        {Dom.\ Journal}
+        {Study on the design and analysis of a 4-DOF robot for trunk rehabilitation} 
+        {}
+        {\vspace{0pt}
+        \textcolor{gray}{Journal of the Korean Society of Manufacturing Process Engineers (2020)} \\
+        Amre Eizad, Sanghun Pyo, \textbf{Geonhyup Lee}, Sung-Ki Lyu, and Jungwon Yoon  \\
+        \textcolor{blue}{\href{https://koreascience.kr/article/JAKO202032555265607.page}{[Paper]}}
+        }
+
+\end{entrylist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsect{Patent}
+\begin{entrylist}
+
+    % 번호 바꾸기
+    \entry
+        {2026}
+        {Apparatus For Collecting Multimodal Demonstration Data And Method For Learning Robot Manipulation Based On Asynchronous Multimodal Inputs}
+        {2026-0020738}
+        {\vspace{-10pt}
+             Kyoobin Lee, \textbf{Geonhyup Lee}, Youngjin Lee, Kangmin Kim, Seongju Lee, Sangjun Noh, Seunghyeok Back \\
+            }
+
+    \entry
+        {2025}
+        {Method And System For Robot Assembly Control Using Multimodal Data}
+        {2025-0175546}
+        {\vspace{-10pt}
+             Kyoobin Lee, \textbf{Geonhyup Lee}, Sungho Shin, Joosoon Lee, Kangmin Kim, Sangbeom Lee, Youngjin Lee \\
+            }
+    
+	\entry
+        {2025}
+		{Method And System For Controlling Robot Pose Using Force/Torque Sensor-Based Pose Estimation}
+		{10-2025-0043239}
+		{\vspace{-10pt}
+             Kyoobin Lee, \textbf{Geonhyup Lee}, Joosoon Lee, Minhwan Ko, Kangmin Kim, Sangjun Noh \\
+            }
+    
+	\entry
+        {2021}
+		{Series Elastic Actuator Apparatus and System Including the Same}
+		{10-2021-0024173}
+		{\vspace{-10pt}
+             Jungwon Yoon, \textbf{Geonhyup Lee}, Hosu Lee, Sanghun Pyo \\
+            }
+
+    \entry
+        {2020}
+		{Neck Posture Correction and Training Device}
+		{10-2020-0154666}
+		{\vspace{-10pt}
+            Jungwon Yoon, Hosu Lee, Amre Eizad, \textbf{Geonhyup Lee}, Jiho Park \\
+            }
+
+    % 번호 바꾸기
+    \entry
+        {2020}
+		{Multi-Purpose Piston Gripper and Robot Manipulator Including the Same}
+		{10-2020-0009972}
+		{\vspace{-10pt}
+            Jungwon Yoon, \textbf{Geonhyup Lee}, Hosu Lee, Amre Eizad \\
+            }
+\end{entrylist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsect{Awards and Honors}
+\begin{entrylist}
+        
+    \entry
+        {2026}
+        {Finalist Excellence Award (Online: 2nd/61 teams; Onsite: 5th/61 teams)}
+        {RoCo Challenge @ AAAI 2026: Robotic Collaborative Assembling for Human-Centered Manufacturing}
+
+    \entry
+        {2025}
+        {AIFesta 2025 Exhibition (AI Robotics Technology Showcase)}
+        {AI Festa 2025 (Korea)}
+        {\textcolor{blue}{\href{https://zdnet.co.kr/view/?no=20251001083046}{[News]}}}
+
+	\entry
+        {2022}
+		{Outstanding Paper Award}
+		{ICROS-KROS 2022}
+		{
+               
+            }
+	\entry
+        {2018}
+		{Social Contribution Award}
+		{Capstone Design Contest in Innovation Center for Engineering Education, Pukyong National University}
+
+      \entry
+       {Fall~2016 \\ \& Fall~2017}
+          {Scholarship for Academic Excellence}
+          {Pukyong National University}
+          {}
+
+
+\end{entrylist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsect{Work Experience}
+\begin{entrylist}
+    \entry
+      {Jan.2024 \\-- Present}
+      {Program Coordinator}
+      {Robot Learning Research Group, Korea Robotics Society (KROS)}
+    {%
+        \href{https://kros.org/Conference/ConferenceView.asp?AC=3&CODE=CD20250401&B_CATE=BBC1}%
+             {\textcolor{blue}{\faFileTextO\;Latest event announcement}}
+      }
+
+    \entry
+      {Mar.2023 \\ -- Aug.2023}
+      {Lab Leader}
+      {Artificial Intelligence Lab, GIST}
+      {}
+
+    \entry
+      {Mar.2021 \\ -- Jun.2021}
+      {Post-master Researcher}
+      {Intelligent Medical Robotics Lab, GIST}
+      {}
+
+    \entry
+      {Feb.2020 \\-- Feb.2021}
+      {Lab Leader}
+      {Intelligent Medical Robotics Lab, GIST}
+      {}
+    
+    \entry
+      {Jan.2019 \\-- Feb.2019}
+      {Research Intern}
+      {Intelligent Medical Robotics Lab, GIST}
+      {}
+    
+    \entry
+      {Jun. 2018 \\ -- Aug.2018}
+      {Research Intern (fully funded)}
+      {Drones and Autonomous Systems Lab (DASL), University of Nevada, Las Vegas}
+      {\vspace{-10pt}
+    \begin{itemize}[leftmargin=*]
+      \item Participated in the \textit{2018 GeekPwn Robot Agent Challenge} (Las Vegas, USA)\,. 
+            \href{https://www.youtube.com/watch?v=SuOyI0M-0gk}%
+            {\textcolor{blue}{\faVideoCamera\;Video}}
+    \end{itemize}
+      }
+
+    \entry
+      {May.2014 \\ -- Feb.2016}
+      {Military Service}
+      {Republic of Korea Auxiliary Police}
+      {}
+
+%--------
+
+\end{entrylist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsect{Teaching Experience}
+\begin{entrylist}
+    \entry
+      {Jul.\ 2025}
+      {Teaching Assistant}
+      {Korea Robotics Society (KROS)}
+      {%
+        AI \& Robotics Summer School 2025 (Korea Robotics Society) 
+        \href{https://kros.org/Conference/ConferenceView.asp?AC=2&CODE=CI20250501}%
+                {\textcolor{blue}{\faFileTextO\;Program overview}}\\[-13pt]
+        \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt]
+          \item Introduced fundamentals of robotics and simulation, and outlined current trends in robot AI.
+          \item Delivered an NVIDIA Isaac Sim tutorial on basic robotic grasping.
+        \end{itemize}
+      }
+
+    \entry
+      {Jul. 2022}
+      {Teaching Assistant — GIST AI Creative Convergence Competition}
+      {GIST}
+      {\vspace{-10pt}}        % ⬅︎ 살짝 당겨주기
+
+    \entry
+      {2024--2025}
+      {Teaching Assistant — Deep Learning (RT5101-01)}
+      {GIST}
+      {\vspace{-10pt}}        % ⬅︎ 살짝 당겨주기
+    
+    \entry
+      {2023, 2025}
+      {Teaching Assistant — Robotics (RT5401-03)}
+      {GIST}
+      {\vspace{-10pt}}        % ⬅︎ 살짝 당겨주기
+    
+    \entry
+      {2022}
+      {Teaching Assistant — Advanced Deep Learning (RT5102-01)}
+      {GIST}
+      {\vspace{-10pt}}        % ⬅︎ 살짝 당겨주기
+
+\end{entrylist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsect{Mentoring Experience}
+\begin{entrylist}
+	\entry
+        {Jun.\ 2024 -- Present}
+		{Kangmin Kim}
+		{GIST}
+		{
+               Currently GIST Ph.D.
+            }
+	\entry
+        {Jan.\ 2025 -- Present}
+		{Youngjin Lee}
+		{GIST}
+		{
+               Currently GIST M.S.
+            }
+        
+        
+\end{entrylist}
+
+
+
+\end{document}

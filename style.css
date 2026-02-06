@@ -1,0 +1,120 @@
+/* 기본 변수 설정 */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --bg-light: #f9f9f9;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.profile-text h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+.position { font-size: 1.2rem; font-weight: 500; color: var(--primary-color); margin: 0; }
+.affiliation { color: var(--text-muted); margin-top: 5px; }
+
+.social-links { margin-top: 20px; }
+.social-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    margin-right: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.social-links a:hover { color: var(--accent-color); }
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+/* Sections */
+h3 {
+    font-size: 1.5rem;
+    border-bottom: 1.5px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.news-list { list-style: none; padding: 0; }
+.news-list li { margin-bottom: 10px; }
+.news-list li span { font-weight: 700; margin-right: 10px; color: var(--accent-color); }
+
+/* Publication Card */
+.pub-card {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    padding: 15px;
+    transition: background 0.3s;
+    border-radius: 8px;
+}
+
+.pub-card:hover { background-color: var(--bg-light); }
+
+.pub-teaser img {
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.pub-title { font-weight: 700; font-size: 1.15rem; color: #000; }
+.pub-authors { margin: 5px 0; color: var(--text-main); }
+.pub-venue { font-style: italic; color: var(--text-muted); margin-bottom: 10px; }
+
+.pub-links a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-right: 12px;
+    padding: 2px 8px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.pub-links a:hover { background: var(--accent-color); color: #fff; }
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header, .pub-card { flex-direction: column; text-align: center; }
+    .profile-img { order: -1; margin: 0 auto 20px auto; }
+    .pub-teaser img { width: 100%; max-width: 350px; margin: 0 auto; }
+    .pub-links { margin-top: 10px; }
+}

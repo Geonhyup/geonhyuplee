@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geonhyup Lee | Ph.D. Student in AI Convergence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile-text">
+                <h1>Geonhyup Lee</h1>
+                <p class="position">Ph.D. Student in AI Convergence</p>
+                <p class="affiliation">Gwangju Institute of Science and Technology (GIST)</p>
+                <p class="affiliation">Advisor: Prof. Kyoobin Lee</p>
+
+                <div class="social-links">
+                    <a href="mailto:lghjayly@gm.gist.ac.kr"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://scholar.google.co.kr/citations?user=m7CNdK0AAAAJ" target="_blank"><i
+                            class="fab fa-google-scholar"></i> Scholar</a>
+                    <a href="https://drive.google.com/file/d/1z7LOgZcPQGG_15mgJxErj-S3e8myndfP/view?usp=sharing"
+                        target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
+                </div>
+            </div>
+            <div class="profile-img">
+                <img src="figure/photo.jpg" alt="Geonhyup Lee" onerror="this.src='https://via.placeholder.com/180'">
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <section id="about">
+            <h3><i class="fas fa-user-graduate"></i> Research Statement</h3>
+            <p>
+                I am a <strong>Robotics AI researcher</strong> at GIST developing scalable frameworks for multimodal
+                action learning.
+                My research focuses on collecting large-scale multimodal datasets—including vision, force, and tactile
+                inputs—and training action models that generalize to contact-rich manipulation tasks.
+                Ultimately, I aim to enable <strong>human-level bimanual manipulation</strong> on robotic platforms.
+            </p>
+        </section>
+
+        <!-- News -->
+        <section id="news">
+            <h3><i class="fas fa-bullhorn"></i> News</h3>
+            <ul class="news-list">
+                <li><span>Jan 2026</span> Two papers (<strong>ManipForce</strong>, <strong>BiGraspFormer</strong>)
+                    accepted to <strong>ICRA 2026</strong>.</li>
+                <li><span>Jan 2025</span> <strong>GraspClutter6D</strong> accepted to <strong>IEEE Robotics and
+                        Automation Letters (RA-L)</strong>.</li>
+                <li><span>Oct 2024</span> <strong>PolyFit</strong> presented at <strong>IROS 2024</strong> (Abu Dhabi).
+                </li>
+            </ul>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h3><i class="fas fa-book"></i> Selected Publications</h3>
+
+            <!-- ManipForce (ICRA 2026) -->
+            <div class="pub-card">
+                <div class="pub-teaser"><img src="figure/manipforce.gif" alt="ManipForce">
+                </div>
+                <div class="pub-info">
+                    <div class="pub-title">ManipForce: Force-Guided Policy Learning with Frequency-Aware Representation
+                        for Contact-Rich Manipulation</div>
+                    <div class="pub-authors"><strong>Geonhyup Lee</strong>, Youngjin Lee, Kangmin Kim, Seongju Lee,
+                        Sangjun Noh, Seunghyeok Back, and Kyoobin Lee</div>
+                    <div class="pub-venue">ICRA 2026 (Arxiv 2025)</div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2509.19047" target="_blank"><i class="fas fa-file-pdf"></i>
+                            Arxiv</a>
+                        <a href="https://sites.google.com/view/manipforce/" target="_blank"><i class="fas fa-globe"></i>
+                            Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BiGraspFormer (ICRA 2026) -->
+            <div class="pub-card">
+                <div class="pub-teaser"><img src="figure/bigraspformer.gif" alt="BiGraspFormer"></div>
+                <div class="pub-info">
+                    <div class="pub-title">BiGraspFormer: End-to-End Bimanual Grasp Transformer</div>
+                    <div class="pub-authors">Kangmin Kim, Seunghyeok Back, <strong>Geonhyup Lee</strong>, Sangbeom Lee,
+                        Sangjun Noh, and Kyoobin Lee</div>
+                    <div class="pub-venue">ICRA 2026 (Arxiv 2025)</div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2509.19142" target="_blank"><i class="fas fa-file-pdf"></i>
+                            Arxiv</a>
+                        <a href="https://sites.google.com/view/bigraspformer" target="_blank"><i
+                                class="fas fa-globe"></i> Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AssemFormer (Under Review) -->
+            <div class="pub-card">
+                <div class="pub-teaser"><img src="https://via.placeholder.com/250x140?text=AssemFormer"
+                        alt="AssemFormer"></div>
+                <div class="pub-info">
+                    <div class="pub-title">AssemFormer: Generalizable Vision-Force Guided Multi-Pin Assembly via
+                        Zero-Shot Sim-to-Real Approach</div>
+                    <div class="pub-authors"><strong>Geonhyup Lee</strong>, Sungho Shin, Joosoon Lee, Kangmin Kim,
+                        Sangbeom Lee, Youngjin Lee, and Kyoobin Lee</div>
+                    <div class="pub-venue">IEEE Transactions on Cybernetics (Under Review)</div>
+                    <div class="pub-links"><a href="https://youtu.be/ONNxIl9NiPQ" target="_blank"><i
+                                class="fab fa-youtube"></i> Video</a></div>
+                </div>
+            </div>
+
+            <!-- 3D Flow Diffusion Policy -->
+            <div class="pub-card">
+                <div class="pub-teaser"><img src='figure/3dfdp.png' alt="3D Flow Diffusion Policy">
+                </div>
+                <div class="pub-info">
+                    <div class="pub-title">3D Flow Diffusion Policy: Visuomotor Policy Learning via Generating Flow in
+                        3D Space</div>
+                    <div class="pub-authors">Sangjun Noh, Dongwoo Nam, Kangmin Kim, <strong>Geonhyup Lee</strong>,
+                        Yeonguk Yu, Raeyoung Kang, and Kyoobin Lee</div>
+                    <div class="pub-venue">Int. Top Journal (Under Review / Arxiv 2025)</div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2509.18676" target="_blank"><i class="fas fa-file-pdf"></i>
+                            Arxiv</a>
+                        <a href="https://sites.google.com/view/3dfdp/home" target="_blank"><i class="fas fa-globe"></i>
+                            Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GraspClutter6D (RA-L 2025) -->
+            <div class="pub-card">
+                <div class="pub-teaser"><img src="figure/graspclutter6d.png" alt="GraspClutter6D"></div>
+                <div class="pub-info">
+                    <div class="pub-title">GraspClutter6D: A Large-scale Dataset for Robotic Grasping and Perception in
+                        Clutter</div>
+                    <div class="pub-authors">Seunghyeok Back, Joosoon Lee, Kangmin Kim, Heeseon Rho, <strong>Geonhyup
+                            Lee</strong>, Raeyong Kang, Sangbeom Lee, Sangjun Noh, and Kyoobin Lee</div>
+                    <div class="pub-venue">IEEE Robotics and Automation Letters (RA-L) 2025</div>
+                    <div class="pub-links"><a href="https://arxiv.org/pdf/2504.06866" target="_blank"><i
+                                class="fas fa-file-pdf"></i> Arxiv</a></div>
+                </div>
+            </div>
+
+            <!-- PolyFit (IROS 2024) -->
+            <div class="pub-card">
+                <div class="pub-teaser"><img src="figure/polyfit.png" alt="PolyFit"></div>
+                <div class="pub-info">
+                    <div class="pub-title">PolyFit: A Peg-in-hole Assembly Framework for Unseen Polygon Shapes via
+                        Sim-to-real Adaptation</div>
+                    <div class="pub-authors"><strong>Geonhyup Lee*</strong>, Joosoon Lee*, Sangjun Noh, Minhwan Ko,
+                        Kangmin Kim, and Kyoobin Lee</div>
+                    <div class="pub-venue">IROS 2024</div>
+                    <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/10802554"
+                            target="_blank"><i class="fas fa-file-pdf"></i> Paper</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <ul class="news-list">
+                <li><span>2021 - Present</span> <strong>Ph.D. Candidate</strong> in AI Convergence, GIST</li>
+                <li><span>2019 - 2021</span> <strong>M.S.</strong> in Integrated Technology, GIST</li>
+                <li><span>2013 - 2019</span> <strong>B.S.</strong> in Mechanical Engineering, Pukyong National
+                    University</li>
+            </ul>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards">
+            <h3><i class="fas fa-award"></i> Awards & Honors</h3>
+            <ul class="news-list">
+                <li><span>2026</span> Finalist Excellence Award, RoCo Challenge @ AAAI 2026</li>
+                <li><span>2022</span> Outstanding Paper Award, ICROS-KROS 2022</li>
+                <li><span>2018</span> Social Contribution Award, PNBU Capstone Contest</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Geonhyup Lee. Last updated: February 2026.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
